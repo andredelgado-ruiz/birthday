@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Feliz Cumpleaños Angie</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="¡Estás invitado al cumpleaños de Angie!">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Cumpleaños, Angie, Fiesta">
+	<meta property="og:type" content="E-Greeting" />
+	<meta property="og:image" content="favicon.ico" />
+	<meta property="og:description" content="¡Ven a celebrar el cumpleaños #25 de Angie! 🎉">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+</head>
+
+<body>
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+        <source src="hbd.mp3"></source>
+	    Tu navegador no soporta este audio 😢
+    </audio>
+
+    <!-- Globos con nombre -->
+    <div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">🫶</h2></div>
+    <div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">A</h2></div>
+	<div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">N</h2></div>
+	<div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;">G</h2></div>
+	<div class="balloons text-center" id="b5"><h2 style="color:#8377E4;">I</h2></div>
+    <div class="balloons text-center" id="b6"><h2 style="color:#99C96A;">E</h2></div>
+    <div class="balloons text-center" id="b7"><h2 style="color:#20CFB4;">🫶</h2></div>
+
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_yellow"></div></div>
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_red"></div></div>
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_blue"></div></div>
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_green"></div></div>
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_pink"></div></div>
+			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_orange"></div></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+
+		<div class="row cake-cover">
+			<div class="col-md-12 text-center">
+				<div class="cake">
+				  <div class="velas">
+				    <div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div>
+				  </div>
+				  <div class="cobertura"></div>
+				  <div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row message">
+			<div class="col-md-12">
+				<p>¡Hola a todos!</p>
+				<p>Hoy celebramos algo muy especial:</p>
+				<p>el cumpleaños número 25 de Angie 🎉</p>
+				<p>Un cuarto de siglo lleno de alegría, aprendizajes y amor.</p>
+				<p>Este es un día para sonreír, abrazar y compartir</p>
+				<p>con todas las personas que la quieren 💖</p>
+				<p>¡Estás cordialmente invitado a acompañarnos en esta celebración!</p>
+				<p>Habrá música, torta, abrazos y muchas risas 🥳</p>
+				<p>Esperamos que puedas venir y celebrar con nosotros</p>
+				<p>La vida no siempre es fácil, pero con Angie todo tiene más sentido ✨</p>
+				<p>¡Nos vemos pronto!</p>
+				<p>— Con cariño,</p>
+				<p>Su familia 💐</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<!-- Galería dentro del mensaje -->
+				<div id="photo-gallery" style="display: none; margin-top: 30px;">
+				<div class="row text-center">
+					<h3>Un pequeño vistazo de Angie 💕</h3>
+				</div>
+				<div class="row text-center">
+					<div class="col-xs-6 col-sm-4 col-md-3">
+					<img src="fotos/angie1.jpg" class="img-thumbnail" alt="Angie 1">
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+					<img src="fotos/angie2.jpg" class="img-thumbnail" alt="Angie 2">
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Botones -->
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">Encender Luces</button>
+					<button class="btn btn-primary" id="play">Reproducir Música</button>
+					<button class="btn btn-primary" id="bannar_coming">¡Decorar!</button>
+					<button class="btn btn-primary" id="balloons_flying">Soltar Globos</button>
+					<button class="btn btn-primary" id="cake_fadein">Ver Torta</button>
+					<button class="btn btn-primary" id="light_candle">Encender Velitas</button>
+					<button class="btn btn-primary" id="wish_message">Mensaje Especial</button>
+					<button class="btn btn-primary" id="story">Invitación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="effect.js"></script>
+</body>
+</html>
